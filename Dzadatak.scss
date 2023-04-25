@@ -1,0 +1,54 @@
+@import "vars";
+@import "mixins";
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+nav {
+    background-color: $NavBGcolor;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    .NY{
+        display: flex;
+        align-items: center;
+       background-color: $NY; 
+       font-size: 1.2em;
+       width: 250px;
+       height: 60px;
+       padding-left: 30px;
+       margin-right: 30px;
+    }
+    a{ 
+        text-decoration: none;
+        color: $WhiteText;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+a:not(:first-child) {
+    padding-left: 100px;
+}
+.container {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .context {
+        color: $WhiteText;
+        position: absolute;
+        width: 60%;
+        text-align: center;
+        background-color: $IntroBG;
+        opacity: 0.5;
+        top: 60%;
+        left: 21%;
+        
+
+    }
+}
