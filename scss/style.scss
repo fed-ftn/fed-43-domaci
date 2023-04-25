@@ -5,21 +5,41 @@
 html, body {
 
     width: $max_width;
-    height: $max_height;
+    height: fit-content;
     margin: 0;
 }
+
+body{
+
+    background-image: url("/fed-43-domaci/slike/intro.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
 
 #link{
 
     display: flex;
     width: 10%;
     padding: 1%;
-    background-color: orange;
+    background-color: orangered;
+    @include small{
+        width: $max_width;
+        font-size: xx-large;
+        
+    }
 }
 
 #location_img{
 
         width: 20%;
+
+    @include small{
+
+        width: 10%;
+    }
 }
 
 a{
@@ -39,48 +59,528 @@ header{
         flex-direction: row;
     }
 
+    @include small{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     text-align: left;
     background-color: grey;
-    width: 99%;
+    width: $max_width;
     margin: 0;
 
 
+
+
 }
 
-.navigation_container div {
 
-    
-    
-}
 
 #nav_list{
 
     display: flex;
     justify-content: left;
     @include nav_list_format{
-        width: 100%;
+        width: $max_width;
         margin-left: 0;
         padding-left: 0;
         
 
         
     }
+
+   
     
 }
 
-#ul_container{
+#nav_list{
 
     width: $max_width;
-    display: inline-block;
-    float: right;
+
+    
+
+    @include small{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: xx-large;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+
+   
 }
 
 li{
 
     margin-left: 10%;
+    @include small{
+
+        margin: 0;
+    }
+    
 }
 
 #first_li{
 
     margin-left: 2%;
+
+    @include small{
+        margin: 0;
+    }
+}
+
+
+
+#welcome_screen{
+
+    color: white;
+    background: rgba($color: #7c7b7b, $alpha: 0.5);
+    text-align: center;
+
+    @include small{
+
+        background-color: black;
+        margin: 0;
+    }
+    
+
+    #first_welcome_text{
+
+        font-size: x-large;
+
+        @include small{
+            margin: 0;
+        }
+    }
+
+   
+}
+
+#background_container{
+
+    
+    margin-top: 25%;
+   
+
+    @include small{
+
+        margin-top: 0;
+    }
+}
+
+#price_range{
+
+    
+    margin-top: 5%;
+    background-color: white;
+    @include flex;
+    justify-content: flex-end;
+
+    @include small{
+
+        justify-content: space-around;
+    }
+    
+    p{
+
+        margin-right: 5%;
+        border: solid grey 1px;
+        border-radius: 10px;
+        padding: 4px;
+    }
+}
+
+#image_section{
+
+    @include image_section_format;
+
+    @include small{
+
+        text-align: center;
+    }
+    
+
+
+}
+
+#image_holder{
+
+    position: relative;
+    width: 90%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    
+    
+
+    
+    @include xlarge{
+        text-align: center;
+    }
+
+    .image_display{
+
+        @include image_format;
+    }
+
+}
+
+
+#image1{
+
+    margin-left: $margin_left;
+}
+
+#image1:hover #hover_text1{
+
+   
+    @include small{
+
+        display: block;
+        
+        top: 0%;
+        left: 2.2%;
+        
+        padding: 1%;
+        margin: 0;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+       
+    
+    
+}
+
+#hover_text1{
+
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 0%;
+    left: 2.2%;
+    
+    
+    margin: 0;
+
+
+
+
+}
+#image2{
+    margin-left: $margin_left;
+}
+
+#image2:hover #hover_text2{
+
+   
+    @include small{
+
+        display: block;
+        
+        position: absolute;
+        padding: 1%;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+       
+    
+    
+}
+#hover_text2{
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 16.5%;
+    left: 2.2%;
+    margin-top: 0;
+    
+    
+    margin: 0;
+    
+}
+#image3{
+    margin-left: $margin_left;
+}
+#hover_text3{
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 33.3%;
+    left: 2.2%;
+    margin-top: 0;
+    
+    
+    
+    
+    
+}
+
+#image3:hover #hover_text3{
+
+   
+    @include small{
+
+        display: block;
+        
+        position: absolute;
+        padding: 1%;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+}
+#image4{
+    margin-left: $margin_left;
+}
+#hover_text4{
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 49.9%;
+    left: 2.2%;
+    margin-top: 0;
+    
+}
+
+#image4:hover #hover_text4{
+
+   
+    @include small{
+
+        display: block;
+        
+        position: absolute;
+        padding: 1%;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+}
+#image5{
+    margin-left: $margin_left;
+}
+#hover_text5{
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 66.7%;
+    left: 2.2%;
+    margin-top: 0;
+    
+}
+
+#image5:hover #hover_text5{
+
+   
+    @include small{
+
+        display: block;
+        
+        position: absolute;
+        padding: 1%;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+}
+#image6{
+    margin-left: $margin_left;
+}
+#hover_text6{
+
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 75.3%;
+    height: 2%;
+    top: 83.3%;
+    left: 2.2%;
+    margin-top: 0;
+    
+}
+
+#image6:hover #hover_text6{
+
+   
+    @include small{
+
+        display: block;
+        
+        position: absolute;
+        padding: 1%;
+       
+        background-color: rgba($color: white, $alpha: 0.5);
+        
+
+
+    }
+}
+
+#pricing{
+
+    background-color: white;
+    text-align: center;
+    
+}
+
+#table_holder{
+
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 50%;
+    height: fit-content;
+    @include table_format;
+    @include xlarge{
+        width: 68%;
+        margin-left: 18%;
+        
+    }
+    
+}
+
+#table_1{
+
+    width: 40%;
+   
+
+    table{
+
+        margin-top: 13%;
+        width: $max_width;
+        
+    }
+}
+
+#table_2{
+
+    width: 40%;
+    
+    
+
+    table{
+
+        width: $max_width;
+        
+    }
+}
+
+#contact{
+
+    text-align: center;
+    margin-top: 10%;
+    
+    
+    
+   
+}
+
+#contact_container{
+
+    @include contact_format;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    
+
+    @include xlarge{
+
+        
+        flex-wrap: wrap;
+        
+    }
+
+
+    
+}
+
+#container{
+
+    @include flex;
+    
+    
+
+    
+    
+}
+
+#iframe_container{
+
+    width: $max_width;
+}
+
+#form_container{
+
+    background-color: orangered;
+    width: 40%;
+    padding: 2%;
+    text-align: left;
+
+    @include xlarge{
+
+        
+        width: 100%;
+        margin-top: 2%;
+        
+    }
+
+    
+
+    #text{
+
+        width: 80%;
+        float: right;
+    }
+
+    #text_email{
+        width: 98%;
+        margin-top: 4%;
+    }
+
+    #text_message{
+
+        width: 98%;
+        margin-top:4%;
+        height: 80%;
+        resize: none;
+    }
+}
+
+
+
+footer{
+
+    @include footer;
 }

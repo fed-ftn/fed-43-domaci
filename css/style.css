@@ -1,18 +1,35 @@
 html, body {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   margin: 0;
+}
+
+body {
+  background-image: url("/fed-43-domaci/slike/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #link {
   display: flex;
   width: 10%;
   padding: 1%;
-  background-color: orange;
+  background-color: orangered;
+}
+@media (max-width: 575.98px) {
+  #link {
+    width: 100%;
+    font-size: xx-large;
+  }
 }
 
 #location_img {
   width: 20%;
+}
+@media (max-width: 575.98px) {
+  #location_img {
+    width: 10%;
+  }
 }
 
 a {
@@ -25,8 +42,15 @@ header {
   flex-direction: row;
   text-align: left;
   background-color: grey;
-  width: 99%;
+  width: 100%;
   margin: 0;
+}
+@media (max-width: 575.98px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 #nav_list {
@@ -38,18 +62,361 @@ header {
   padding-left: 0;
 }
 
-#ul_container {
+#nav_list {
   width: 100%;
-  display: inline-block;
-  float: right;
+}
+@media (max-width: 575.98px) {
+  #nav_list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 }
 
 li {
   margin-left: 10%;
 }
+@media (max-width: 575.98px) {
+  li {
+    margin: 0;
+  }
+}
 
 #first_li {
   margin-left: 2%;
+}
+@media (max-width: 575.98px) {
+  #first_li {
+    margin: 0;
+  }
+}
+
+#welcome_screen {
+  color: white;
+  background: rgba(124, 123, 123, 0.5);
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  #welcome_screen {
+    background-color: black;
+    margin: 0;
+  }
+}
+#welcome_screen #first_welcome_text {
+  font-size: x-large;
+}
+@media (max-width: 575.98px) {
+  #welcome_screen #first_welcome_text {
+    margin: 0;
+  }
+}
+
+#background_container {
+  margin-top: 25%;
+}
+@media (max-width: 575.98px) {
+  #background_container {
+    margin-top: 0;
+  }
+}
+
+#price_range {
+  margin-top: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+}
+@media (max-width: 575.98px) {
+  #price_range {
+    justify-content: space-around;
+  }
+}
+#price_range p {
+  margin-right: 5%;
+  border: solid grey 1px;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+#image_section {
+  background-color: aquamarine;
+  padding: 10%;
+}
+@media (max-width: 575.98px) {
+  #image_section {
+    text-align: center;
+  }
+}
+
+#image_holder {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #image_holder {
+    text-align: center;
+  }
+}
+#image_holder .image_display {
+  width: 300px;
+  height: 400px;
+}
+
+#image1 {
+  margin-left: 2%;
+}
+
+@media (max-width: 575.98px) {
+  #image1:hover #hover_text1 {
+    display: block;
+    top: 0%;
+    left: 2.2%;
+    padding: 1%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#hover_text1 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 0%;
+  left: 2.2%;
+  margin: 0;
+}
+
+#image2 {
+  margin-left: 2%;
+}
+
+@media (max-width: 575.98px) {
+  #image2:hover #hover_text2 {
+    display: block;
+    position: absolute;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#hover_text2 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 16.5%;
+  left: 2.2%;
+  margin-top: 0;
+  margin: 0;
+}
+
+#image3 {
+  margin-left: 2%;
+}
+
+#hover_text3 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 33.3%;
+  left: 2.2%;
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  #image3:hover #hover_text3 {
+    display: block;
+    position: absolute;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#image4 {
+  margin-left: 2%;
+}
+
+#hover_text4 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 49.9%;
+  left: 2.2%;
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  #image4:hover #hover_text4 {
+    display: block;
+    position: absolute;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#image5 {
+  margin-left: 2%;
+}
+
+#hover_text5 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 66.7%;
+  left: 2.2%;
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  #image5:hover #hover_text5 {
+    display: block;
+    position: absolute;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#image6 {
+  margin-left: 2%;
+}
+
+#hover_text6 {
+  display: none;
+  text-align: left;
+  position: absolute;
+  width: 75.3%;
+  height: 2%;
+  top: 83.3%;
+  left: 2.2%;
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  #image6:hover #hover_text6 {
+    display: block;
+    position: absolute;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+#pricing {
+  background-color: white;
+  text-align: center;
+}
+
+#table_holder {
+  margin-left: 30%;
+  margin-top: 2%;
+  width: 50%;
+  height: fit-content;
+  color: white;
+  text-align: center;
+  display: flex;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #table_holder {
+    width: 68%;
+    margin-left: 18%;
+  }
+}
+
+#table_1 {
+  width: 40%;
+}
+#table_1 table {
+  margin-top: 13%;
+  width: 100%;
+}
+
+#table_2 {
+  width: 40%;
+}
+#table_2 table {
+  width: 100%;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#contact_container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #contact_container {
+    flex-wrap: wrap;
+  }
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#iframe_container {
+  width: 100%;
+}
+
+#form_container {
+  background-color: orangered;
+  width: 40%;
+  padding: 2%;
+  text-align: left;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #form_container {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+#form_container #text {
+  width: 80%;
+  float: right;
+}
+#form_container #text_email {
+  width: 98%;
+  margin-top: 4%;
+}
+#form_container #text_message {
+  width: 98%;
+  margin-top: 4%;
+  height: 80%;
+  resize: none;
+}
+
+footer {
+  color: white;
+  background-color: grey;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  margin-top: 2%;
+  padding: 1%;
+}
+footer p {
+  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */

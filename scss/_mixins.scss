@@ -12,3 +12,86 @@
     list-style-type: none;
     @content
 }
+
+@mixin image_section_format{
+
+   
+    background-color: aquamarine;
+    padding: 10%;
+    
+    @content
+}
+
+@mixin image_format{
+
+    width: 300px;
+    height: 400px;
+    
+}
+
+@mixin table_format{
+
+    color: white;
+    text-align: center;
+    display: flex;
+    @content
+}
+
+@mixin contact_format{
+
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+@mixin footer{
+
+   
+    color: white;
+    background-color: grey;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 2%;
+    
+    padding: 1%;
+    p{
+
+        display: inline;
+    }
+
+}
+
+@mixin small {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+  
+  @mixin medium {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  
+  @mixin xlarge {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  
+  @mixin xxlarge {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+ 
+  
