@@ -1,7 +1,7 @@
 @import "vars";
 @import "mixins";
 body {
-    height: 100vh;
+    height: 300vh;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
@@ -20,8 +20,11 @@ nav {
        font-size: 1.2em;
        width: 250px;
        height: 60px;
-       padding-left: 30px;
+       padding-left: 20px;
        margin-right: 30px;
+    }
+    img {
+        width: 50px;
     }
     a{ 
         text-decoration: none;
@@ -31,9 +34,12 @@ nav {
         text-decoration: underline;
     }
 }
-a:not(:first-child) {
-    padding-left: 100px;
+.navbar > {
+        a:not(:first-child) {
+            padding-left: 100px;
+        }
 }
+
 .container {
     position: relative;
     img {
@@ -45,10 +51,62 @@ a:not(:first-child) {
         width: 60%;
         text-align: center;
         background-color: $IntroBG;
-        opacity: 0.5;
         top: 60%;
         left: 21%;
-        
+    }
+}
+
+.dugmici {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    
+    .tri {
+        border: 1px solid grey;
+        border-radius: 40px;
+        padding: 15px;
+        margin: 30px 15px;
+    }
+}
+.tri:hover {
+    background-color: $dugmici;
+    color: $WhiteText;
+}
+.slike {
+    background-color: $svetloplava;
+    padding: 50px 0;
+    .slike2 {
+        margin: 0px 150px;
+        img {
+            padding: 15px;
+            height: 400px;
+            width: 300px;
+        }
 
     }
 }
+.tablediv {
+    text-align: center;
+}
+table {
+    align-items: center;
+    border-collapse: collapse;
+    margin: auto;
+    td {
+        border: 1px solid grey;
+
+    }
+}
+.contact {
+    background-color: $svetloplava;
+    h3 {
+        text-align: center;
+    }
+    }
+
+.container2 {
+    display: flex;
+}
+    form {
+        width: 50%;
+    }

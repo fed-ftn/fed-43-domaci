@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  height: 300vh;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -21,8 +21,11 @@ nav .NY {
   font-size: 1.2em;
   width: 250px;
   height: 60px;
-  padding-left: 30px;
+  padding-left: 20px;
   margin-right: 30px;
+}
+nav img {
+  width: 50px;
 }
 nav a {
   text-decoration: none;
@@ -32,7 +35,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-a:not(:first-child) {
+.navbar > a:not(:first-child) {
   padding-left: 100px;
 }
 
@@ -47,8 +50,65 @@ a:not(:first-child) {
   position: absolute;
   width: 60%;
   text-align: center;
-  background-color: #23363e;
-  opacity: 0.5;
+  background-color: rgba(48, 65, 70, 0.5);
   top: 60%;
   left: 21%;
+}
+
+.dugmici {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+.dugmici .tri {
+  border: 1px solid grey;
+  border-radius: 40px;
+  padding: 15px;
+  margin: 30px 15px;
+}
+
+.tri:hover {
+  background-color: #cfd1d3;
+  color: #fff;
+}
+
+.slike {
+  background-color: #f3f7f9;
+  padding: 50px 0;
+}
+.slike .slike2 {
+  margin: 0px 150px;
+}
+.slike .slike2 img {
+  padding: 15px;
+  height: 400px;
+  width: 300px;
+}
+
+.tablediv {
+  text-align: center;
+}
+
+table {
+  align-items: center;
+  border-collapse: collapse;
+  margin: auto;
+}
+table td {
+  border: 1px solid grey;
+}
+
+.contact {
+  background-color: #f3f7f9;
+}
+.contact h3 {
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+}
+
+form {
+  width: 50%;
 }/*# sourceMappingURL=Dzadatak.css.map */
