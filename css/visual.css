@@ -1,5 +1,5 @@
 body {
-  height: 200dvh;
+  height: 300dvh;
   font-family: "Roboto", sans-serif;
 }
 
@@ -79,6 +79,51 @@ main .prvaKlasa div h1 {
 }
 main .prvaKlasa div p {
   font-size: 24px;
+}
+main .drugaKlasa {
+  height: 45%;
+}
+main .drugaKlasa .buttonBox {
+  height: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .drugaKlasa .buttonBox button {
+  height: 50px;
+  margin-left: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px #cfd1d3 solid;
+  font-size: 16px;
+  color: #797979;
+}
+main .drugaKlasa .box1 {
+  background-color: #f3f7f9;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main .drugaKlasa .box1 .slike {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .drugaKlasa .box1 .slike div {
+  height: 320px;
+  width: 20%;
+  overflow: hidden;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=visual.css.map */
