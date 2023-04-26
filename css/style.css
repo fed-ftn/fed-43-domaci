@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #374249;
+  width: 100%;
+  height: 65px;
+  display: flex;
+}
+nav .navG {
+  background-color: #f75311;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav address {
+  padding-left: 25px;
+}
+nav .navNG {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+nav .navNG a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+}
+main img {
+  width: 100%;
+}
+
+.ispodSlike {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+.ispodSlike div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.ispodSlike div div {
+  width: 150px;
+  height: 60%;
+  color: #797979;
+  border: 1px solid #797979;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.prekoGlSlike {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 10%;
+  background-color: #374249;
+  opacity: 65%;
+}
+
+.prekoGlSlike2 {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prekoGlSlike2 h1 {
+  opacity: 100%;
+  margin: 10px 0 0 0;
+  height: 50%;
+}
+.prekoGlSlike2 p {
+  margin: 0;
+}
+
+.slike {
+  height: 740px;
+  background-color: #f3f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slike div {
+  height: 95%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slike div figure {
+  margin: 0;
+  width: 19%;
+  position: relative;
+  margin-left: 30px;
+}
+.slike div figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(207, 209, 211, 0.8);
+  flex-direction: column;
+  color: #374249;
+  padding: 10px 0 0 10px;
+  display: none;
+}
+.slike div figcaption span {
+  color: #374249;
+  opacity: inherit;
+  font-weight: bolder;
+}
+.slike div img {
+  width: 100%;
+}
+
+figure:hover figcaption {
+  display: flex;
+}
+
+.pricing {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing h1 {
+  color: #374249;
+}
+.pricing table {
+  height: 40%;
+  width: 50%;
+  border-collapse: collapse;
+}
+.pricing table tr {
+  text-align: center;
+}
+
+#belo {
+  background-color: #ffffff;
+}
+
+.tableH {
+  background-color: #f75311;
+  color: #ffffff;
+  border: 1px solid #797979;
+}
+
+.tableHs {
+  background-color: #374249;
+  color: #ffffff;
+  border: 1px solid #797979;
+}
+
+.tableTd {
+  color: #797979;
+  border: 1px solid #797979;
+}
+
+legend {
+  color: #797979;
+  margin-bottom: 40px;
+}
+
+.contactUs {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f7f9;
+}
+.contactUs h1 {
+  color: #374249;
+}
+
+.contactContainer {
+  height: 65%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+iframe {
+  margin: 10px 0 0 10px;
+}
+
+#formCont {
+  background-color: #f75311;
+  width: 67%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row1 {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row1 select {
+  width: 25%;
+  color: black;
+}
+.row1 input {
+  width: 70%;
+}
+
+.row2 {
+  height: 15%;
+  width: 100%;
+}
+.row2 input {
+  width: 100%;
+  height: 100%;
+}
+
+.row3 {
+  height: 30%;
+  width: 100%;
+}
+.row3 textarea {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background-color: #374249;
+  display: flex;
+  justify-content: center;
+}
+footer span {
+  color: #f75311;
+}
+
+@media only screen and (max-width: 1100px) {
+  .slike {
+    height: 1200px;
+  }
+  .slike div {
+    justify-content: center;
+  }
+  .slike div figure {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
