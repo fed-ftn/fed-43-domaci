@@ -69,8 +69,7 @@ body{
 
 .galery{
     @include container;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    @include margin_in_sections;
     color: $boja_fonta;
 
     .filter{
@@ -99,4 +98,68 @@ body{
             margin-right: 50px;
         }
     }
+
+}
+
+.pricing{
+    @include container;
+    @include margin_in_sections;
+    position: relative;
+    height: 350px;
+
+    h2, p{
+        text-align: center;
+    }
+
+    h2{
+        color: $boja_naslova;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: $boja_fonta;
+    }
+
+
+    .table1{
+
+            @include tabela_div{
+                justify-content: end;
+                left: 0;
+            }
+
+            table{
+                @include tabele;
+
+                td{
+                    @include tabela_dt;
+                }
+
+                .orange{
+                    background-color: $narandzasta;
+                }
+            }
+        }
+    }
+
+    .table2{
+
+        @include tabela_div{
+            justify-content: start;
+            right: 0;
+        }
+        
+        table{
+            @include tabele;
+
+            td{
+                @include tabela_dt;
+            }
+
+            .orange{
+                background-color: $narandzasta;
+            }
+        }
+    
 }

@@ -30,3 +30,30 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@mixin margin_in_sections{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@mixin tabele{
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+    color: $boja_fonta_navigacija;
+}
+
+@mixin tabela_div{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    bottom: 50px;
+    @content;
+}
+
+@mixin tabela_dt{
+    background-color: $tamno_plava;
+    border-bottom: 1px solid $svetlo_siva_hover;
+    padding: 5px;
+    border-right: 1px solid $svetlo_siva_hover;
+}

@@ -74,4 +74,59 @@ body {
       margin-top: 50px;
       margin-right: 50px; }
 
+.pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  height: 350px; }
+  .pricing h2, .pricing p {
+    text-align: center; }
+  .pricing h2 {
+    color: #374249;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .pricing p {
+    color: #797979; }
+  .pricing .table1 {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    bottom: 50px;
+    justify-content: end;
+    left: 0; }
+    .pricing .table1 table {
+      width: 70%;
+      text-align: center;
+      border-collapse: collapse;
+      color: #fff; }
+      .pricing .table1 table td {
+        background-color: #374249;
+        border-bottom: 1px solid #cfd1d3;
+        padding: 5px;
+        border-right: 1px solid #cfd1d3; }
+      .pricing .table1 table .orange {
+        background-color: #f75311; }
+
+.table2 {
+  position: absolute;
+  width: 50%;
+  display: flex;
+  bottom: 50px;
+  justify-content: start;
+  right: 0; }
+  .table2 table {
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+    color: #fff; }
+    .table2 table td {
+      background-color: #374249;
+      border-bottom: 1px solid #cfd1d3;
+      padding: 5px;
+      border-right: 1px solid #cfd1d3; }
+    .table2 table .orange {
+      background-color: #f75311; }
+
 /*# sourceMappingURL=main.css.map */
