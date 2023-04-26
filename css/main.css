@@ -50,4 +50,28 @@ body {
     font-weight: 300;
     font-size: 18px; }
 
+.galery {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #797979; }
+  .galery .filter {
+    display: flex;
+    justify-content: end; }
+    .galery .filter ul {
+      display: flex; }
+      .galery .filter ul li {
+        list-style: none;
+        margin-right: 50px; }
+  .galery .flex_div {
+    display: flex;
+    flex-wrap: wrap; }
+    .galery .flex_div img {
+      width: 200px;
+      height: 300px;
+      background-size: cover;
+      margin-top: 50px;
+      margin-right: 50px; }
+
 /*# sourceMappingURL=main.css.map */
