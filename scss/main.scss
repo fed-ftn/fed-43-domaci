@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import 'vars';
+@import 'mixins';
+
+*{
+    @include box-sizing;
+}
+
+body{
+    font-family: $font;
+}
+
+.big_nav{
+    background-color: $tamno_plava;
+    @include flex{
+        align-items: center;
+        justify-content: start;
+    };
+    color: $boja_fonta_navigacija;
+    font-weight: 300;
+
+    .newyork{
+        @include flex;
+        padding: 20px 150px 20px 40px;
+        background-color: $narandzasta;
+
+        i{
+            margin-right: 10px;
+        }
+    }
+
+    ul{
+        @include flex;
+
+        li{
+            list-style: none;
+            padding: 0px 30px;
+        }
+    }
+}
+
+.hero{
+    
+    .image{
+        position: relative;
+
+        img{
+            @include hero-image;
+        }
+    }
+
+    .hero_text{
+        @include center_absolute{
+            width: 50%;
+        }
+        color: $boja_fonta_navigacija;
+        background: rgba($tamno_plava, 0.5);
+        h1{
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        p{
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+}
