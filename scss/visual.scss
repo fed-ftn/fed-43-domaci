@@ -2,7 +2,6 @@
 @import "mixins";
 
 body {
-    height: 300dvh;
     font-family: $Font;
 }
 
@@ -62,7 +61,6 @@ nav {
 }
 
 main {
-    height: 90%;
 
     .prvaKlasa {
         background-image: url("../slike/intro.jpg");
@@ -71,7 +69,8 @@ main {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 45%;
+        padding-bottom: 15%;
+        height: 100%;
 
         div {
             width: 70%;
@@ -95,12 +94,12 @@ main {
     }
 
     .drugaKlasa {
-        height: 45%;
 
         .buttonBox {
-            height: 10%;
             padding-left: 15%;
             padding-right: 15%;
+            padding-top: 25px;
+            padding-bottom: 25px;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -145,4 +144,148 @@ main {
             }
         }
     }
+
+    .trecaKlasa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $Font_color;
+
+        h1 {
+            padding-top: 60px;
+            color: $H_color;
+        }
+
+        p {
+            padding-top: 50px;
+        }
+
+        table {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            width: 750px;
+            height: 170px;
+            border-collapse: collapse;
+
+
+            th,td {
+                border: 1px solid $Font_color;
+            }
+
+            .zero {
+                border: none;
+
+            }
+
+            .one {
+                border: 1px solid $Box_color_orange;
+                background-color: $Box_color_orange;
+                font-weight: bold;
+                color: white;
+            }
+
+            .two {
+                background-color: $Box_color_orange;
+                color: white;
+            }
+
+            .three {
+                background-color: $Box_color_darkblue;
+                color: white;
+                font-weight: bold;
+
+            }
+
+        }
+    }
+
+    .cetvrtaKlasa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $Box_color_nafone_grey;
+        padding-bottom: 60px;
+
+        h1 {
+            padding-top: 60px;
+            color: $H_color;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 70%;
+            margin-top: 60px;
+
+            iframe {
+                height: 285px;
+                width: 400px;
+            }
+
+            .velikiNarandzastiPravougaonikAuNjemuForma {
+                width: 750px;
+                height: 200px;
+                background-color: $Box_color_orange;
+                margin-top: 0;
+                padding: 35px;
+                margin-left: 20px;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .horizontal {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin: 0;
+
+                        .spol {
+                            width: 20%;
+                            height: 30px;
+                        }
+
+                        .imja {
+                            width: 70%;
+                            height: 30px;
+                        }
+                    }
+
+                    .pocta {
+                        height: 30px;
+                    }
+
+                    .tekst {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 60px;
+    background-color: $Box_color_darkblue;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        bottom: 4px;
+        span {
+            color: $Box_color_orange;
+        }
+    }
+    
 }

@@ -1,5 +1,4 @@
 body {
-  height: 300dvh;
   font-family: "Roboto", sans-serif;
 }
 
@@ -51,9 +50,6 @@ nav ul li a {
   font-weight: 400;
 }
 
-main {
-  height: 90%;
-}
 main .prvaKlasa {
   background-image: url("../slike/intro.jpg");
   background-size: cover;
@@ -61,7 +57,8 @@ main .prvaKlasa {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 45%;
+  padding-bottom: 15%;
+  height: 100%;
 }
 main .prvaKlasa div {
   width: 70%;
@@ -80,13 +77,11 @@ main .prvaKlasa div h1 {
 main .prvaKlasa div p {
   font-size: 24px;
 }
-main .drugaKlasa {
-  height: 45%;
-}
 main .drugaKlasa .buttonBox {
-  height: 10%;
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -124,6 +119,124 @@ main .drugaKlasa .box1 .slike div {
   width: 20%;
   overflow: hidden;
   margin: 20px;
+}
+main .trecaKlasa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #797979;
+}
+main .trecaKlasa h1 {
+  padding-top: 60px;
+  color: #374249;
+}
+main .trecaKlasa p {
+  padding-top: 50px;
+}
+main .trecaKlasa table {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 750px;
+  height: 170px;
+  border-collapse: collapse;
+}
+main .trecaKlasa table th, main .trecaKlasa table td {
+  border: 1px solid #797979;
+}
+main .trecaKlasa table .zero {
+  border: none;
+}
+main .trecaKlasa table .one {
+  border: 1px solid #f75311;
+  background-color: #f75311;
+  font-weight: bold;
+  color: white;
+}
+main .trecaKlasa table .two {
+  background-color: #f75311;
+  color: white;
+}
+main .trecaKlasa table .three {
+  background-color: #374249;
+  color: white;
+  font-weight: bold;
+}
+main .cetvrtaKlasa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f7f9;
+  padding-bottom: 60px;
+}
+main .cetvrtaKlasa h1 {
+  padding-top: 60px;
+  color: #374249;
+}
+main .cetvrtaKlasa div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-top: 60px;
+}
+main .cetvrtaKlasa div iframe {
+  height: 285px;
+  width: 400px;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma {
+  width: 750px;
+  height: 200px;
+  background-color: #f75311;
+  margin-top: 0;
+  padding: 35px;
+  margin-left: 20px;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form .horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form .horizontal .spol {
+  width: 20%;
+  height: 30px;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form .horizontal .imja {
+  width: 70%;
+  height: 30px;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form .pocta {
+  height: 30px;
+}
+main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma form .tekst {
+  height: 60px;
+}
+
+footer {
+  height: 60px;
+  background-color: #374249;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  bottom: 4px;
+}
+footer p span {
+  color: #f75311;
 }
 
 /*# sourceMappingURL=visual.css.map */
