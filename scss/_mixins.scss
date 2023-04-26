@@ -57,3 +57,21 @@
     padding: 5px;
     border-right: 1px solid $svetlo_siva_hover;
 }
+
+@mixin heading{
+    text-align: center;
+    color: $boja_naslova;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+@mixin forma{
+    background-color: $narandzasta;
+    height: 200px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}

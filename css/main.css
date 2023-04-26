@@ -84,6 +84,7 @@ body {
   .pricing h2, .pricing p {
     text-align: center; }
   .pricing h2 {
+    text-align: center;
     color: #374249;
     margin-bottom: 10px;
     text-transform: uppercase; }
@@ -128,5 +129,49 @@ body {
       border-right: 1px solid #cfd1d3; }
     .table2 table .orange {
       background-color: #f75311; }
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .contact h2 {
+    text-align: center;
+    color: #374249;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .contact .contact_flex {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; }
+    .contact .contact_flex iframe {
+      width: 50%;
+      height: 300px;
+      margin-right: 100px; }
+    .contact .contact_flex form {
+      background-color: #f75311;
+      height: 200px;
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: stretch; }
+      .contact .contact_flex form .first {
+        display: flex;
+        justify-content: space-between; }
+        .contact .contact_flex form .first select {
+          width: 100px; }
+        .contact .contact_flex form .first input {
+          width: 400px; }
+
+footer {
+  background-color: #374249;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  padding: 10px; }
+  footer span {
+    color: #f75311; }
 
 /*# sourceMappingURL=main.css.map */

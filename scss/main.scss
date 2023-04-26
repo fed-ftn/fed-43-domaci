@@ -112,9 +112,7 @@ body{
     }
 
     h2{
-        color: $boja_naslova;
-        margin-bottom: 10px;
-        text-transform: uppercase;
+        @include heading;
     }
 
     p{
@@ -161,5 +159,56 @@ body{
                 background-color: $narandzasta;
             }
         }
-    
+}
+
+.contact{
+    @include container;
+    @include margin_in_sections;
+
+    h2{
+        @include heading;
+    }
+
+    .contact_flex{
+        margin-top: 100px;
+        @include flex{
+            justify-content: center;
+        }
+        
+        iframe{
+            width: 50%;
+            height: 300px;
+            margin-right: 100px;
+        }
+
+        form{
+            @include forma;
+
+            .first{
+                @include flex{
+                    justify-content: space-between;
+                }
+                
+                select{
+                    width: 100px;
+                }
+
+                input{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $tamno_plava;
+    color: $boja_fonta_navigacija;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px;
+
+    span{
+        color: $narandzasta;
+    }
 }
