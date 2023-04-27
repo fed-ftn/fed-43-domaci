@@ -1,0 +1,234 @@
+@import 'vars';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 250vh; 
+    font-family: $fontFamily;
+}
+.container{
+    height: 100%;
+    header{
+        background-color: $headerIFooter;
+        height: 3%;
+        position: relative;
+        .head-div{
+            height: 100%;
+            background-color: $narandzasta;
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 16%;
+                height: 76%;
+                padding-top: 0.5em;
+                padding-left: 2em;
+            }
+            a{
+                color: white;
+                font-size: 1.4em;
+                padding-top: 1em;  
+                font-weight: bold;
+            }
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            margin-left: 20%;
+            width: 80%;
+            ul{
+                display: flex;
+                list-style: none;
+                color: white;
+                li{
+                    font-size: 1.3em;
+                    padding: 1.2em 2.5em;
+                }
+            }
+        }
+    }
+    .welcome-section{
+        height: 33%;
+        background: url(/fed-43-domaci/slike/intro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        .welcome-div{
+            background: rgba($color: $headerIFooter, $alpha: 0.4);
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 7.5em;
+            color: white;
+            h1{
+                font-size: 4em;
+            }
+        }
+    }
+    .button-section{
+        height: 5%;
+        .button-div{
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            button{
+                height: 45%;
+                width: 8%;
+                padding: 0.6em;
+                border-radius: 50px;
+                font-size: 1em;
+                background-color: white;
+                border: 1px solid $hover;
+                color: $bojaFonta;
+                margin-right: 2em;
+                margin-top: 1.4em;
+                cursor: pointer;
+                &.garage{
+                    margin-right: 20em;
+                }
+            }
+            button:hover{
+                background-color: $hover;
+                color: white;
+            }
+        }
+    }
+    .img-section{
+        background-color: $section-bg;
+        padding-top: 1em;
+        .img-div{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-left: 15%;
+            div{
+                position: relative;
+                margin-top: 3em;
+                margin-right: 3em;
+                width: 18%;
+                header{
+                    display: none;
+                    position: absolute;
+                    width: 101%;
+                    height: 40%;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding: 0.9em;
+                    background-color: rgba($color: white, $alpha: 0.8);
+                }
+                img{
+                    &.downtown{
+                        height: 88.2%;
+                    }
+                }
+            }
+            div:hover header{
+                display: block;
+            }
+        }
+    }
+    .table-section{
+        text-align: center;
+        h1{
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-top: 2em;
+            padding-bottom: 2.5em;
+        }
+        table{
+            width: 45%;
+            margin: 3em auto;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 0.5em;
+        }
+        .orange{
+            background-color: $narandzasta;
+            color: white;
+            
+        }
+        .darkCol{
+            font-weight: bold;
+            color: white;
+            background-color: $headerIFooter;
+        }
+        thead{
+            .darkCol{
+                border-right: 1px solid $bojaFonta;
+            }
+        }
+        tbody{
+            td{
+                border: 1px solid $bojaFonta; 
+                font-weight: bold;   
+            }
+            .td{
+                background-color: $headerIFooter;
+                color: white;
+            }
+        }  
+    }
+    .form-section{
+        background-color: $section-bg;
+        height: 20%;
+        text-align: center;
+        padding-top: 3em;
+        h1{
+            font-weight: bolder;
+            margin-bottom: 4em;
+        }
+        .form-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 80%;
+            form{
+                width: 40%;
+                background-color: $narandzasta;
+                height: 50%;
+                padding: 1em;
+                select{
+                    width: 20%;
+                    height: 19%;
+                }
+                input[type="text"]{
+                    width: 70%;
+                    height: 15%;
+                    margin-bottom: 2em;
+                    margin-left: 2em;
+                }
+                input[type="email"]{
+                    width: 94%;
+                    height: 15%;
+                    margin-bottom: 2em;
+                }
+                textarea{
+                    width: 94%;
+                }
+            }
+            iframe{
+                height: 80%;
+                width: 20%;
+                margin-left: 10em;
+            }
+        }
+    }
+    footer{
+        height: 2%;
+        color: white;
+        text-align: center;
+        background-color: $headerIFooter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            color: $narandzasta;
+        }
+    }
+}
