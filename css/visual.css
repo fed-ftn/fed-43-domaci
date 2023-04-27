@@ -49,6 +49,12 @@ nav ul li a {
   font-size: 18px;
   font-weight: 400;
 }
+nav ul li:hover {
+  text-decoration: underline;
+}
+nav .nevidljivo {
+  display: none;
+}
 
 main .prvaKlasa {
   background-image: url("../slike/intro.jpg");
@@ -101,6 +107,10 @@ main .drugaKlasa .buttonBox button {
   font-size: 16px;
   color: #797979;
 }
+main .drugaKlasa .buttonBox button:hover {
+  background-color: #cfd1d3;
+  color: white;
+}
 main .drugaKlasa .box1 {
   background-color: #f3f7f9;
   padding-left: 15%;
@@ -114,11 +124,24 @@ main .drugaKlasa .box1 .slike {
   flex-wrap: wrap;
   align-items: center;
 }
-main .drugaKlasa .box1 .slike div {
+main .drugaKlasa .box1 .slike .zaHover {
   height: 320px;
   width: 20%;
   overflow: hidden;
   margin: 20px;
+  position: relative;
+}
+main .drugaKlasa .box1 .slike .zaHover:hover .zaHoverr {
+  display: block;
+}
+main .drugaKlasa .box1 .slike .zaHover .zaHoverr {
+  position: absolute;
+  font-size: 1.7em;
+  background-color: rgba(255, 255, 255, 0.541);
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
+  display: none;
 }
 main .trecaKlasa {
   display: flex;
@@ -134,6 +157,9 @@ main .trecaKlasa h1 {
 }
 main .trecaKlasa p {
   padding-top: 50px;
+}
+main .trecaKlasa button {
+  display: none;
 }
 main .trecaKlasa table {
   margin-top: 40px;
@@ -237,6 +263,102 @@ footer p {
 }
 footer p span {
   color: #f75311;
+}
+
+@media screen and (max-width: 1007px) {
+  main .drugaKlasa .box1 .slike .zaHover {
+    width: 40%;
+  }
+  main .cetvrtaKlasa div {
+    justify-content: center;
+  }
+  main .cetvrtaKlasa div .velikiNarandzastiPravougaonikAuNjemuForma {
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav div {
+    width: 100%;
+    height: 80px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .nevidljivo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #374249;
+    width: 100%;
+    height: 240px;
+    padding: 0;
+  }
+  nav .nevidljivo li {
+    padding: 10px;
+  }
+  nav:hover .nevidljivo {
+    display: flex;
+  }
+  main .prvaKlasa {
+    background-image: none;
+    background-color: black;
+    align-items: end;
+    padding-bottom: 3%;
+  }
+  main .prvaKlasa div {
+    background-color: black;
+    margin-top: 200px;
+  }
+  main .drugaKlasa .buttonBox {
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+  }
+  main .drugaKlasa .buttonBox #bezM {
+    margin: 0;
+  }
+  main .drugaKlasa .box1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .drugaKlasa .box1 .slike .zaHover {
+    width: 95%;
+  }
+  main .drugaKlasa .box1 .slike .zaHover img {
+    height: 240%;
+  }
+  main .drugaKlasa .box1 .slike .zaHover .zaHoverr {
+    display: block;
+    padding-left: 1em;
+    padding-right: 10em;
+  }
+  main .trecaKlasa table {
+    display: none;
+  }
+  main .trecaKlasa button {
+    display: block;
+    height: 50px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px #cfd1d3 solid;
+    font-size: 16px;
+    color: #797979;
+  }
+  main .trecaKlasa button:hover {
+    background-color: #cfd1d3;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=visual.css.map */

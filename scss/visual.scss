@@ -55,8 +55,19 @@ nav {
                 color: $Font_color_white;
                 font-size: 18px;
                 font-weight: 400;
-             }
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
+
+
+    }
+
+    
+    .nevidljivo {
+        display: none;
     }
 }
 
@@ -118,6 +129,11 @@ main {
                 border: 1px $Button_color_hover solid;
                 font-size: 16px;
                 color: $Font_color;
+
+                &:hover {
+                    background-color: $Button_color_hover;
+                    color: white;
+                }
             }
         }
 
@@ -128,18 +144,36 @@ main {
             padding-top: 40px;
             padding-bottom: 40px;
 
-
             .slike {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 align-items: center;
 
-                div {
+                .zaHover {
                     height: 320px;
                     width: 20%;
                     overflow: hidden;
                     margin: 20px;
+                    position: relative;
+
+                    &:hover {
+                        .zaHoverr {
+                            display: block;
+                        }
+                    }
+
+                    .zaHoverr {
+                        position: absolute;
+                        font-size: 1.7em;
+                        background-color: rgba(255, 255, 255, 0.541);
+                        padding-top: 1em;
+                        padding-bottom: 2em;
+                        padding-left: 0.5em;
+                        display: none;
+                    }
+
+
                 }
             }
         }
@@ -160,6 +194,10 @@ main {
 
         p {
             padding-top: 50px;
+        }
+
+        button {
+            display: none;
         }
 
         table {
@@ -287,5 +325,146 @@ footer {
             color: $Box_color_orange;
         }
     }
-    
 }
+
+@include medium {
+    main {
+        .drugaKlasa {
+            .box1{
+                .slike {
+                    .zaHover {
+                        width: 40%;
+                    }
+                }
+
+            }
+        }
+
+        .cetvrtaKlasa {
+
+            div {
+                justify-content: center;
+
+                .velikiNarandzastiPravougaonikAuNjemuForma {
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}
+
+@include small {
+    nav { 
+        flex-direction: column;
+
+        div {
+            width: 100%; 
+            height: 80px;
+        }
+
+        ul {
+            display: none;
+        }
+
+        .nevidljivo {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $Box_color_darkblue;
+            width: 100%;
+            height: 240px;
+            padding: 0;
+
+            li {
+                padding: 10px;
+            }
+        }
+
+        &:hover {
+            .nevidljivo {
+                display: flex;
+            }
+        }
+    }
+
+    main {
+        .prvaKlasa {
+            background-image: none;
+            background-color: black;
+            align-items: end;
+            padding-bottom: 3%;
+
+            div {
+                background-color: black;
+                margin-top: 200px;
+
+            }
+        }
+        .drugaKlasa{
+            .buttonBox {
+                padding-left: 5%;
+                padding-right: 5%;
+                justify-content: center;
+
+                #bezM {
+                    margin: 0;
+                }
+            }
+
+            .box1{
+
+                padding-left: 10px;
+                padding-right: 10px;
+
+                .slike {
+                    .zaHover {
+                        width: 95%;
+
+                        img {
+                            height: 240%;
+                        }
+                        .zaHoverr {
+                            display: block;
+                            padding-left: 1em;
+                            padding-right: 10em;
+                        }
+                    }
+                }
+
+            }
+
+        }
+        .trecaKlasa {
+            table {
+                display: none;
+            }
+
+            button {
+                display: block;
+                height: 50px;
+                margin-top: 2em;
+                margin-bottom: 3em;
+                padding-left: 25px;
+                padding-right: 25px;
+                background-color: white;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border: 1px $Button_color_hover solid;
+                font-size: 16px;
+                color: $Font_color;
+
+                &:hover {
+                    background-color: $Button_color_hover;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+
+
